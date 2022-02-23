@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class Test {
+	public static void main(String[] args) {
+		/**
+		 * @author M. Firat Sen, 2022
+		 */
+		double math,physics,chemistry,turkish,history,music,averageGrade;
+		Scanner input = new Scanner(System.in);
+		System.out.println("Mathematic:");
+		math = input.nextDouble();
+		System.out.println("Physics:");
+		physics = input.nextDouble();
+		System.out.println("Chemistry:");
+		chemistry = input.nextDouble();
+		System.out.println("Turkish:");
+		turkish = input.nextDouble();
+		System.out.println("History:");
+		history = input.nextDouble();
+		System.out.println("Music:");
+		music = input.nextDouble();
+		averageGrade = (math + physics + chemistry + turkish + history + music)/6;
+		System.out.println("Your average grade is:");
+		System.out.println(averageGrade);
+		String result = averageGrade > 60 ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+		System.out.println(result);
+	}
+}
